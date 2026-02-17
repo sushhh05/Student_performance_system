@@ -51,5 +51,7 @@ if st.button("Predict Overall Score"):
         study_method_textbook
     ]])
 
-    st.success(f"📊 Predicted Overall Score: {round(prediction[0], 2)}")
-
+    st.success(f"📊 Predicted Overall Score: {round(prediction[0], 2)}")   
+    
+    #prediction[0] here [0] is written because prediction outout comes in array
+    #so it takes the 0th index value to display..and we cant directly use round function on array.
